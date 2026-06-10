@@ -11,11 +11,8 @@ sites:
     url: https://backend.cerberussecurity.ai/health
 
 status-website:
-  # Live immediately at https://cerberussecurityai.github.io/status
-  baseUrl: /status
-  # To use the custom domain: add a DNS CNAME (status -> cerberussecurityai.github.io)
-  # at the registrar, then comment out baseUrl and uncomment the next line:
-  # cname: status.cerberussecurity.ai
+  # Served at the custom domain (DNS CNAME: status -> cerberussecurityai.github.io)
+  cname: status.cerberussecurity.ai
   name: Cerberus Status
   introTitle: "Cerberus — real-time and historical status"
   introMessage: Live status of the Cerberus API monitoring platform. Uptime is checked every 5 minutes by GitHub Actions. Subscribe to updates via the RSS/Atom feeds.
